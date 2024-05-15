@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Johnson Sofola> </title>
+	<meta charset = "UTF - 8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="mainstyle.css">
+	
+</head>
+<body>
+<header>
+<h1> Hot Beanz</h1>
+</header>
+ <nav>
+<ul>
+   <li><a href = "index.html" class="navlink">Home</a></li>
+   <li><a href = "index.html#AboutUs" class="navlink">AboutUs</a></li>
+   <li><a href = "JobSpecification.html" class="navlink">JobSpecification</a></li>
+   <li><a href = "JobOpportunites.html" class="navlink">JobOpportunites</a></li>
+   <li><a href = "ApplicationForm.html" class="navlink">ApplicationForm</a></li>
+</ul>
+</nav>
+   
+	<!--sections>
+	<article>
+	 <aside>
+	 <footer-->
+	 
+<h1>Application Forms</h1>
+<script>
+function validateForm() {
+	let fName = document.forms["ApplicationForm"]["firstname"].value;
+	if (fName == "") {
+		alert ("Firstname must be filled out");
+		return false;
+  }
+
+   let lName = document.forms["ApplicationForm"]["lastname"].value;
+   if (lName == "") {
+		alert ("Lastname must be filled out");
+		return false;
+	}		
+	let CName = document.forms["ApplicationForm"]["ContactNumber"].value;
+	if (CName == "") {
+		alert ("ContactNumber must be filled out");
+		return false;
+	}
+	
+}
+
+
+</script>
+
+<section>
+<form name = "ApplicationForm"
+onsubmit = "return validateForm()"
+
+ action="https://formspree.io/f/mleqzpjw"
+  method="POST"
+  >
+<label>Your Firstname: <input type = "firstname" name="firstname"></label>
+<br>
+
+<label>Your Lastname: <input type = "lastname" name="lastname"></label>
+<br>
+<label>Your ContactNumber: <input type = "ContactNumber" name
+="ContactNumber"></label>
+<br>
+<label>Your Message: <textarea name= "Message" name
+></textarea></label>
+<br>
+<br>
+
+<button type = "submit">Send</button>
+</form>
+<section>
+</body>
+</html>
