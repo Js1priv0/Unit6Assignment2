@@ -46,3 +46,9 @@ h1{
 h2{
 	text-align:center;
 }
+body {
+    background-color: #cccccc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
